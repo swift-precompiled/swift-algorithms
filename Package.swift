@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/swift-precompiled/swift-numerics",
-            revision: "1.1.1-precompiled.1"
+            exact: "1.1.1"
         )
     ],
     targets: [
@@ -30,8 +30,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-ad5340779b9237b5059ccaf22c87470e70fa3d264da8bd27cdc7941e296f3429.xcframework.zip",
-            checksum: "ad5340779b9237b5059ccaf22c87470e70fa3d264da8bd27cdc7941e296f3429"
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-85a921afa657232c966bb355c6468b1e8cc873d416c4e2de1c0ce64414b5981d.xcframework.zip",
+            checksum: "85a921afa657232c966bb355c6468b1e8cc873d416c4e2de1c0ce64414b5981d"
         )
     ]
 )
