@@ -30,8 +30,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-85a921afa657232c966bb355c6468b1e8cc873d416c4e2de1c0ce64414b5981d.xcframework.zip",
-            checksum: "85a921afa657232c966bb355c6468b1e8cc873d416c4e2de1c0ce64414b5981d"
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-8d49d466a4ff00f994a776635c3d1045cc766b2af13116e9d92d59f6b69ff453.xcframework.zip",
+            checksum: "8d49d466a4ff00f994a776635c3d1045cc766b2af13116e9d92d59f6b69ff453"
         )
     ]
 )
