@@ -1,4 +1,4 @@
-// swift-tools-version:5.7.0
+// swift-tools-version:5.9.0
 
 import PackageDescription
 import Foundation
@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "Algorithms",
-            targets: ["Algorithms_Aggregation"]
+            targets: ["Algorithms_PrecompiledProduct"]
         )
     ],
     dependencies: [
@@ -20,18 +20,23 @@ let package = Package(
     targets: [
         .target(
             name: "Algorithms_Aggregation",
+            dependencies: ["Algorithms"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
+        ),
+        .binaryTarget(
+            name: "Algorithms",
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-1e8654223253e3f0c95361ab9ab3f426afd16bd498ed3cd7ae0b31605b6c721c.xcframework.zip",
+            checksum: "1e8654223253e3f0c95361ab9ab3f426afd16bd498ed3cd7ae0b31605b6c721c"
+        ),
+        .target(
+            name: "Algorithms_PrecompiledProduct",
             dependencies: [
-                "Algorithms",
+                "Algorithms_Aggregation",
                 .product(
                     name: "RealModule",
                     package: "swift-numerics"
                 )
             ]
-        ),
-        .binaryTarget(
-            name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-8d49d466a4ff00f994a776635c3d1045cc766b2af13116e9d92d59f6b69ff453.xcframework.zip",
-            checksum: "8d49d466a4ff00f994a776635c3d1045cc766b2af13116e9d92d59f6b69ff453"
         )
     ]
 )
