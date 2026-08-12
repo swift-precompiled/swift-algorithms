@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "Algorithms",
-            targets: ["Algorithms_PrecompiledProduct"]
+            targets: ["Algorithms", "Algorithms_PrecompiledProduct"]
         )
     ],
     dependencies: [
@@ -25,8 +25,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-2c0256ff66b9af0b615752534e9c9cc0a66e48890a60ce33f5945431467b10a5.xcframework.zip",
-            checksum: "2c0256ff66b9af0b615752534e9c9cc0a66e48890a60ce33f5945431467b10a5"
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-88fe355b485f2a5ff8a4583c37f96e153d9d9e4b74da2abd6404dfc8e510f376.xcframework.zip",
+            checksum: "88fe355b485f2a5ff8a4583c37f96e153d9d9e4b74da2abd6404dfc8e510f376"
         ),
         .target(
             name: "Algorithms_PrecompiledProduct",
