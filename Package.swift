@@ -21,12 +21,13 @@ let package = Package(
         .target(
             name: "Algorithms_Aggregation",
             dependencies: ["Algorithms"],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-88fe355b485f2a5ff8a4583c37f96e153d9d9e4b74da2abd6404dfc8e510f376.xcframework.zip",
-            checksum: "88fe355b485f2a5ff8a4583c37f96e153d9d9e4b74da2abd6404dfc8e510f376"
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-59b30d463eb0394db9cfb51ea5800d06e152274b4040ac5c1821199706bf5c65.xcframework.zip",
+            checksum: "59b30d463eb0394db9cfb51ea5800d06e152274b4040ac5c1821199706bf5c65"
         ),
         .target(
             name: "Algorithms_PrecompiledProduct",
@@ -36,7 +37,8 @@ let package = Package(
                     name: "RealModule",
                     package: "swift-numerics"
                 )
-            ]
+            ],
+            packageAccess: false
         )
     ]
 )
