@@ -25,8 +25,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Algorithms",
-            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-1e8654223253e3f0c95361ab9ab3f426afd16bd498ed3cd7ae0b31605b6c721c.xcframework.zip",
-            checksum: "1e8654223253e3f0c95361ab9ab3f426afd16bd498ed3cd7ae0b31605b6c721c"
+            url: "https://github.com/swift-precompiled/swift-algorithms/releases/download/1.2.1/Algorithms-2c0256ff66b9af0b615752534e9c9cc0a66e48890a60ce33f5945431467b10a5.xcframework.zip",
+            checksum: "2c0256ff66b9af0b615752534e9c9cc0a66e48890a60ce33f5945431467b10a5"
         ),
         .target(
             name: "Algorithms_PrecompiledProduct",
